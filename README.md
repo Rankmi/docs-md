@@ -50,8 +50,8 @@ Los documentos dentro de la carpeta `Backlog/` describen las historias de usuari
 ### Listado de Backlogs
 
 ##### Core
-- [Apagar servidor de Elasticsearch](Backlog/core/elasctic/down.md)
-- [Aumentar covertura de los Test](Backlog/core/test/coverage.md)
+- [Apagar servidor de Elasticsearch](Backlog/core/Elasctic/down.md)
+- [Aumentar covertura de los Test](Backlog/core/test/Coverage.md)
 - [Mejoras en importadores](Backlog/core/imports/import.md)
 - [Mejoras en exportadores](Backlog/core/exports/export.md)
 
