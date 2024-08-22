@@ -65,9 +65,9 @@ La carpeta `Docs/` contiene toda la documentación técnica relacionada con las 
 ### Listado de Documentos Técnicos
 
 ##### Core
-- [Segmentos](Docs/core/segments/funcionamiento_segmentos.md)
+- [Segmentos](Docs/core/Segments/funcionamiento_segmentos.md)
 - [Sincronización con posiciones](Docs/core/sincronizacion/positions.md)
-- [Sincronización sin posiciones](Docs/core/sincronizacion/singles.md)
+- [Sincronización sin posiciones](Docs/core/sincronizacion/single.md)
 
 #### Auth
 - [Cambio de formato de contraseña](Docs/auth/regex.md)
