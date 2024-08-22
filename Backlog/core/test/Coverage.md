@@ -1,0 +1,3 @@
+- Tener un 100% de coverage de test en el engine
+- Tener un 100% de coverage de filtros de no elastic
+- 

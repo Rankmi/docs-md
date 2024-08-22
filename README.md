@@ -1,7 +1,7 @@
 
 # Documentación de Backlogs y Funcionalidades Implementadas
 
-Este repositorio está destinado a la documentación de backlogs, así como a las funcionalidades ya implementadas en los proyectos del Core. A medida que se avanza en el desarrollo, se actualizará esta documentación para mantener un registro detallado y organizado.
+Este repositorio está destinado a la documentación de backlogs, así como a las funcionalidades ya implementadas en los proyectos del Core. A medida que se avanza en el desarrollo, se actualizará esta documentación para mantener un registro detallado yb organizado.
 
 ## Índice
 
@@ -46,8 +46,14 @@ Los documentos dentro de la carpeta `Backlog/` describen las historias de usuari
 
 ### Listado de Backlogs
 
-- [Funcionalidad 1](Backlog/feature1.md)
-- [Funcionalidad 2](Backlog/feature2/subfeature.md)
+##### Core
+- [Apagar servidor de Elasticsearch](Backlog/core/elasctic/down.md)
+- [Aumentar covertura de los Test](Backlog/core/test/coverage.md)
+- [Mejoras en importadores](Backlog/core/imports/import.md)
+- [Mejoras en exportadores](Backlog/core/exports/export.md)
+
+##### Transversal
+- [Rediseño de Gema Demographic](Backlog/transversal/demographic/redisign.md)
 
 ## Documentación de Funcionalidades Implementadas
 
@@ -55,9 +61,11 @@ La carpeta `Docs/` contiene toda la documentación técnica relacionada con las 
 
 ### Listado de Documentos Técnicos
 
+##### Core
+- [Segmentos](Docs/core/Segments/funcionamiento_segmentos.md)
+- [Sincronización con posiciones](Docs/core/sincronización/positions.md)
+- [Sincronización sin posiciones](Docs/core/sincronización/single.md)
 
-- [Segmentos](Docs/Segments/funcionamiento_segmentos.md)
-- [Funcionalidad Implementada 2](Docs/implemented_feature2/details.md)
 
 ## Contribuir
 
@@ -67,7 +75,7 @@ Para contribuir a la documentación:
 2. Sigue la estructura y formato establecido en este repositorio.
 3. Haz un pull request una vez que tu documentación esté completa.
 
-O sigue la siguiente Guía para trabajar desde [Obsidian](https://forum.obsidian.md/t/the-easiest-way-to-setup-obsidian-git-to-backup-notes/51429)
+O sigue la siguiente Guía para trabajar desde [Obsidian](https://forum.obsidian.md/t/the-easiest-way-to-setup-obsidian-git-to-backup-notes/51429) **RECOMENDADO**
 
 Asegúrate de mantener la coherencia en la estructura y el contenido de la documentación para facilitar la navegación y comprensión.
 

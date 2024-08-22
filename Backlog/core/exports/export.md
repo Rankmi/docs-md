@@ -1,0 +1,3 @@
+- Exportador de usuarios
+	- Optimizar flujo de generación de exportación con las vistas.
+	- Bloquear doble descargas

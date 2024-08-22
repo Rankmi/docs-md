@@ -1,0 +1,4 @@
+- Mejorar importación de usuarios.
+	- Notificaciones de Firebase.
+	- Cancelar cargas.
+	- Separa cargar de opcionales de usuarios
