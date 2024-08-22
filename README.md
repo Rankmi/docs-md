@@ -67,6 +67,8 @@ Para contribuir a la documentación:
 2. Sigue la estructura y formato establecido en este repositorio.
 3. Haz un pull request una vez que tu documentación esté completa.
 
+O sigue la siguiente Guía para trabajar desde [Obsidian](https://forum.obsidian.md/t/the-easiest-way-to-setup-obsidian-git-to-backup-notes/51429)
+
 Asegúrate de mantener la coherencia en la estructura y el contenido de la documentación para facilitar la navegación y comprensión.
 
 ## Contacto
