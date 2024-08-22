@@ -56,7 +56,7 @@ La carpeta `Docs/` contiene toda la documentación técnica relacionada con las 
 ### Listado de Documentos Técnicos
 
 
-- [Segmentos](Docs/Segments/Funcionamiento_de_los_segmentos_en_master.md)
+- [Segmentos](Docs/Segments/funcionamiento_segmentos.md)
 - [Funcionalidad Implementada 2](Docs/implemented_feature2/details.md)
 
 ## Contribuir
