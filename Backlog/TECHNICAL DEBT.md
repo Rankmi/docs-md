@@ -1,0 +1,11 @@
+- Apagar Elastic!
+- Tener un 100% de coverage de test en el engine
+- Tener un 100% de coverage de filtros de no elastic
+- Mejorar importación de usuarios.
+	- Notificaciones de firebase.
+	- Cancelar cargas.
+	- Separa cargar de opcionales de usuarios
+- Exportador de usuarios
+	- Optimizar flujo de generación de exportación con las vistas.
+	- Bloquear doble descargas
+- Rediseñar gema de Demographic
