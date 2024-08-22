@@ -1,7 +1,7 @@
 
 # Documentación de Backlogs y Funcionalidades Implementadas
 
-Este repositorio está destinado a la documentación de backlogs, así como a las funcionalidades ya implementadas en los proyectos del Core. A medida que se avanza en el desarrollo, se actualizará esta documentación para mantener un registro detallado yb organizado.
+Este repositorio está destinado a la documentación de backlogs, así como a las funcionalidades ya implementadas en los proyectos del Core. A medida que se avanza en el desarrollo, se actualizará esta documentación para mantener un registro detallado y organizado.
 
 ## Índice
 
@@ -31,13 +31,16 @@ La estructura del repositorio es la siguiente:
 ```
 ├── README.md
 ├── Backlog/
-│   ├── feature1.md
-│   └── feature2/
-│       └── subfeature.md
+│   └── core/
+│   │   └── feature1/
+│   │       └── feature1.md
+│   └── transversal/
+│       └── feature1/
+│           └── feature1.md
 └── Docs/
-    ├── implemented_feature1.md
-    └── implemented_feature2/
-        └── details.md
+    └── core/
+		└── feature1/
+            └── feature1.md
 ```
 
 ## Documentación de Backlogs
@@ -53,7 +56,7 @@ Los documentos dentro de la carpeta `Backlog/` describen las historias de usuari
 - [Mejoras en exportadores](Backlog/core/exports/export.md)
 
 ##### Transversal
-- [Rediseño de Gema Demographic](Backlog/transversal/demographic/redisign.md)
+- [Rediseño de Gema Demographic](Backlog/transversal/demographic/redesign.md)
 
 ## Documentación de Funcionalidades Implementadas
 
@@ -73,7 +76,13 @@ Para contribuir a la documentación:
 
 1. Crea un branch nuevo para tu documentación.
 2. Sigue la estructura y formato establecido en este repositorio.
-3. Haz un pull request una vez que tu documentación esté completa.
+3. **Formato de Nombres de Archivos**:
+    - **Sin Espacios**: Los nombres de los archivos deben evitar el uso de espacios. En su lugar, usa guiones bajos (`_`) para separar palabras. Por ejemplo:
+        - `incorrecto: funcionamiento de los segmentos en master.md`
+        - `correcto: funcionamiento_segmentos_en_master.md`
+    - **Minúsculas**: Usa minúsculas para los nombres de archivos y directorios para mantener consistencia.
+    - **Descriptivos**: Asegúrate de que los nombres de los archivos sean descriptivos y reflejen el contenido del documento.
+4. Haz un pull request una vez que tu documentación esté completa.
 
 O sigue la siguiente Guía para trabajar desde [Obsidian](https://forum.obsidian.md/t/the-easiest-way-to-setup-obsidian-git-to-backup-notes/51429) **RECOMENDADO**
 

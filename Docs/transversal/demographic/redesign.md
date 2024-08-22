@@ -1,0 +1,1 @@
+- Se debe rediseñar la gema de demographic, actualmente la estructura, la carga y la gestión de la misma a generado mucho retrabajo ya que no esta optimizada a una estructura solida para la construcción y gestión de las mismas. 
