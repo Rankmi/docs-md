@@ -10,6 +10,6 @@ t = Tenant.find_by(token: '834efe49-cf5f-4728-81f9-c437bc70c0d1')
 Apartment::Tenant.switch! t.scheme
 
 LoginSetup.all.each do |l|
-	l.update(password_validator_minlen: password_validator_minlen, password_validator_regexp: password_validator_regexp)
+  l.update(password_validator_minlen: password_validator_minlen, password_validator_regexp: password_validator_regexp)
 end
 ```
