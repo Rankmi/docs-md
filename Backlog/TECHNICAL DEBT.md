@@ -1,4 +1,4 @@
-##CORE
+## Core
 
 - Apagar Elastic!
 - Tener un 100% de coverage de test en el engine
@@ -12,5 +12,7 @@
 	- Bloquear doble descargas
 - Rediseñar gema de Demographic
 
-##VACATIONS
+## VACATIONS
+
+
 
