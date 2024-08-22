@@ -69,6 +69,8 @@ La carpeta `Docs/` contiene toda la documentación técnica relacionada con las 
 - [Sincronización con posiciones](Docs/core/sincronización/positions.md)
 - [Sincronización sin posiciones](Docs/core/sincronización/single.md)
 
+#### Auth
+- [Cambio de formato de contraseña](Docs/auth/regex.md)
 
 ## Contribuir
 
