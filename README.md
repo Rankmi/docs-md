@@ -54,6 +54,7 @@ Los documentos dentro de la carpeta `Backlog/` describen las historias de usuari
 - [Aumentar covertura de los Test](Backlog/core/test/Coverage.md)
 - [Mejoras en importadores](Backlog/core/imports/import.md)
 - [Mejoras en exportadores](Backlog/core/exports/export.md)
+- [Robustecer opciones de filtros.](Backlog/core/ransack/filtros.md)
 
 ##### Transversal
 - [Rediseño de Gema Demographic](Backlog/transversal/demographic/redesign.md)

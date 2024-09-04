@@ -1,0 +1,2 @@
+Se debe permitir agregar mas opciones de filtros en los opcionales
+https://rankmi.myjetbrains.com/youtrack/issue/RKM-53508/Consorcio-Al-crear-un-filtro-por-opcional-del-tipo-Fecha-no-se-muestran-todas-las-opciones
