@@ -55,7 +55,7 @@ bundle exec rails sync:run['enterprise_token']
     4. Confirmar que la información de posiciones esté actualizada.
         
 
-# Validación de Datos en el Módulo Payroll
+## Validación de Datos en el Módulo Payroll
 
 - **Datos Necesarios:**
     - Los usuarios deben estar creado en el país correspondiente a la posición que se quiere asignar
@@ -110,6 +110,17 @@ Contract.unscoped.active.current_versions.find_each.reject { |contract|
 ```
 
 Los casos problematicos se deberán resolver a mano.
+
+### Determinar empleados con múltiples contratos
+
+Para encontrar los empleados que tienen múltiples contratos se puede correr el siguiente script de Ruby:
+
+```ruby
+Employee.find_each.each_with_index.filter { |emp, index|
+  pp (index/count.to_f * 100).round(2) if index % 150 == 0
+  emp.contracts.active.current_versions.count > 1
+}.map { |e| e[0] }.map { |emp| [emp.person.identifier, emp.contracts.active.current_versions.count] }
+```
 
 ## Validación cruzada
 
