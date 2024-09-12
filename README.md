@@ -55,6 +55,8 @@ Los documentos dentro de la carpeta `Backlog/` describen las historias de usuari
 - [Mejoras en importadores](Backlog/core/imports/import.md)
 - [Mejoras en exportadores](Backlog/core/exports/export.md)
 - [Robustecer opciones de filtros.](Backlog/core/ransack/filtros.md)
+- [Mejoras en Autenticación](Backlog/core/auth/auth.md)
+- [Sincronización](Backlog/core/engine/engine)
 
 ##### Transversal
 - [Rediseño de Gema Demographic](Backlog/transversal/demographic/redesign.md)
