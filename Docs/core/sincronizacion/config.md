@@ -90,7 +90,7 @@ Contract.active.current_versions.filter_map { |c|
 }.each { |id|
     pp id
     contract = Contract.find(id)
-    Current.country = c.country_namespace
+    Current.country = contract.country_namespace
 
     contract.skip_sns_publish = true
     contract.send(:sync_user_organization_data)
@@ -116,6 +116,7 @@ Los casos problematicos se deberán resolver a mano.
 Para encontrar los empleados que tienen múltiples contratos se puede correr el siguiente script de Ruby:
 
 ```ruby
+count = Employee.count
 Employee.find_each.each_with_index.filter { |emp, index|
   pp (index/count.to_f * 100).round(2) if index % 150 == 0
   emp.contracts.active.current_versions.count > 1
