@@ -156,7 +156,7 @@ Al sincronizar desde payroll se debe correr el siguiente script para garantizar 
 total = User.count
 User.find_each.each_with_index { |user, index|
   pp "#{(index/total.to_f * 100).round(2)}%" if index % 100 == 0
-  Current.country = user.country_camelize
+  Current.country = user.person.country_namespace
   user.send(:sns_after_update)
 }
 ```
