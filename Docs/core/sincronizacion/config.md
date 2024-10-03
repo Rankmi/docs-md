@@ -157,6 +157,7 @@ total = User.count
 User.find_each.each_with_index { |user, index|
   pp "#{(index/total.to_f * 100).round(2)}%" if index % 100 == 0
   Current.country = user.person.country_namespace
+  user.reload
   user.send(:sns_after_update)
 }
 ```
