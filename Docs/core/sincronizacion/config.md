@@ -147,3 +147,16 @@ SELECT token FROM shared_extensions.dblink('master_db_connect',
 'SELECT token FROM "268658f5-fe53-4197-aa6e-6b1a069ea911-ingevec".users')
 AS t1(token varchar);
 ```
+
+## Primer sincronización
+
+Al sincronizar desde payroll se debe correr el siguiente script para garantizar que se toman los valores del país que corresponde:
+
+```ruby
+total = User.count
+User.find_each.each_with_index { |user, index|
+  pp "#{(index/total.to_f * 100).round(2)}%" if index % 100 == 0
+  Current.country = user.country_camelize
+  user.send(:sns_after_update)
+}
+```
