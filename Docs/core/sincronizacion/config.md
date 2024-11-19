@@ -71,22 +71,28 @@ bundle exec rails sync:run['enterprise_token']
 Se debe revisar que los datos entre contratos y personas sean consistentes de forma interna. Para esto se puede ejecutar el siguiente script:
 
 ```ruby
-Contract.active.current_versions.filter_map { |c|
+User.joins(:contracts).distinct.filter_map { |u|
+  Current.country = u.person.country_namespace
+  u.contracts.active.current_versions.order(started_at: :desc).first&.root_contract&.versions&.first
+}.filter_map { |c|
   Current.country = c.country_namespace
   p = c.person
 
-  c.id unless c.area_id == p.area_id && c.position_id == p.position_id && c.supervisor_id == p.direct_manager_id
+  c.id unless c.area_id == p.area_id && c.position_id == p.position_id && c.supervisor_id == p.direct_manager_id && p.user.organization_position_token == c.organization_position_token
 }
 ```
 
 Para realizar la sincronización se puede correr el siguiente script:
 
 ```ruby
-Contract.active.current_versions.filter_map { |c|
+User.joins(:contracts).distinct.filter_map { |u|
+  Current.country = u.person.country_namespace
+  u.contracts.active.current_versions.order(started_at: :desc).first&.root_contract&.versions&.first
+}.filter_map { |c|
   Current.country = c.country_namespace
   p = c.person
 
-  c.id unless c.area_id == p.area_id && c.position_id == p.position_id && c.supervisor_id == p.direct_manager_id
+  c.id unless c.area_id == p.area_id && c.position_id == p.position_id && c.supervisor_id == p.direct_manager_id && p.user.organization_position_token == c.organization_position_token
 }.each { |id|
     pp id
     contract = Contract.find(id)
